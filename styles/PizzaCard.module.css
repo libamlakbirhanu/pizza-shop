@@ -1,0 +1,45 @@
+.container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d1411e;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.desc {
+  text-align: center;
+  color: #777;
+}
+
+@media screen and (max-width: 418px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .desc, .price {
+    font-size: 20px;
+  }
+} 
