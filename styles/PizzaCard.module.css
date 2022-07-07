@@ -13,6 +13,10 @@
   transform: scale(1.05);
 }
 
+.image {
+  border-radius: 10px;
+}
+
 .title {
   font-size: 18px;
   font-weight: bold;
@@ -39,7 +43,8 @@
     font-size: 30px;
   }
 
-  .desc, .price {
+  .desc,
+  .price {
     font-size: 20px;
   }
-} 
+}
