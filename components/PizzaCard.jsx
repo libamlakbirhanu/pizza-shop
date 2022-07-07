@@ -1,9 +1,15 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from "../styles/PizzaCard.module.css";
 
 function PizzaCard({ pizza }) {
+  const router = useRouter();
+
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      onClick={() => router.push(`/product/${pizza._id}`)}
+    >
       <Image
         className={styles.image}
         src={pizza.image}

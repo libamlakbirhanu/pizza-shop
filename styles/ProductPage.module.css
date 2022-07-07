@@ -4,10 +4,11 @@
 }
 
 .left {
+  padding-top: 50px;
   flex: 1;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -20,6 +21,8 @@
   width: 80%;
   height: 80%;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .price {
@@ -146,4 +149,4 @@
     height: 50px;
     padding: 10px 20px;
   }
-} 
+}
